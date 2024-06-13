@@ -1,0 +1,119 @@
+:root {
+  --blanco: hsl(0, 0%, 100%); /* estadisticas y titulo */
+  --blancoTramsparente: hsla(0, 0%, 100%, 0.75); /* parrafo principal */
+  --blancoTitulos: hsla(0, 0%, 100%, 0.6); /*titulo estadisticas */
+  --color-fondo: hsl(233, 47%, 7%);
+  --fondo-tarjeta: hsl(244, 38%, 16%);
+  --violeta-claro: hsla(277, 64%, 61%, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    height: 100vh;
+    background-color: var(--color-fondo);
+  }
+
+  .general {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 80%;
+    max-width: 800px;
+  }
+
+  .attribution {
+    color: white;
+    margin-top: 48px;
+    text-align: center;
+    display: block;
+   
+  }
+}
+
+
+
+.image {
+  position: relative;
+  display: inline-block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.violeta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(160, 84, 206, 0.5);
+}
+
+.text {
+  background-color: var(--fondo-tarjeta);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding: 48px;
+}
+
+.titulo {
+  color: var(--blanco);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.span {
+  color: #a95bd9;
+  font-family: "Lexend Deca", sans-serif;
+}
+.subtexto {
+  color: rgba(137, 135, 157, 0.9);
+  margin-top: 18px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.iconos {
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.iconos b {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.iconos p {
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: var(--blancoTramsparente);
+}
+
+
+
+.attribution a {
+  color: #a95bd9;
+}
